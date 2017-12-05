@@ -1,8 +1,5 @@
 # MqttSender-UI
 Simple aws mqtt client with JavaFX GUI
 
-to build: mvn jfx:native
-
-will produce .jar in target folder
-
-and .exe files in target/jfx/native/mqtt folder
+you can download executable files, or build it by yourself with "mvn jfx:native" command
+anyway, it is recommended to launch it via .jar file
