@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import mqtt.MQTTConnector;
 
-import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
@@ -82,7 +81,7 @@ public class MainViewController {
 
     public class Console extends OutputStream {
         @Override
-        public void write(int b) throws IOException {
+        public void write(int b) {
             appendText(String.valueOf((char) b));
         }
 
