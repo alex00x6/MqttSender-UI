@@ -47,7 +47,7 @@ public class MainViewController {
     private void goLaunch() {
         //по нажатию кнопки запускаем main.java.main.java.mqtt клиент в отдельном потоке
         //делаем это для того, чтоб приложение не зависало, пока main.java.main.java.mqtt клиент не закончит
-       new Thread(() -> {
+        new Thread(() -> {
             MQTTConnector mqttConnector = new MQTTConnector();
             mqttConnector.clientEndpoint = iotEndpoint.getText();
             mqttConnector.topic = topic.getText();

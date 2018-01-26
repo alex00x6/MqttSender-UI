@@ -16,7 +16,7 @@ public class TestTopicListener extends AWSIotTopic {
 
     @Override
     public void onMessage(AWSIotMessage message) {
-        System.out.println(System.currentTimeMillis() + ": "+message.getTopic()+" <<< " + message.getStringPayload());
+        System.out.println(System.currentTimeMillis() + ": " + message.getTopic() + " <<< " + message.getStringPayload());
     }
 
 }
